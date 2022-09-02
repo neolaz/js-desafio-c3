@@ -5,7 +5,7 @@ let remainingAttempts;
 let inputKeepPlaying;
 let keepPlaying = true;
 
-while(keepPlaying == true){
+while(keepPlaying){
     randomNumber = Math.floor(Math.random() * 10);  // Genero el número a adivinar.
     console.log(randomNumber);
     inputNumber = prompt("Adiviná el número del 0 al 9, tenés 3 intentos! Ingresá un número del 0 al 9.");  // Input del usuario.
