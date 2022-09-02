@@ -23,14 +23,14 @@ while(keepPlaying){
             break;
         }
 
-        if(attemps == 3){   // Falló los tres intentos, le pregunto si quiere volver a jugar.
+        if(attemps == 2){   // Falló los tres intentos, le pregunto si quiere volver a jugar.
             inputKeepPlaying = prompt("Perdiste! Ingrese S para jugar nuevamente o cualquier otra tecla para salir.");       
             keepPlaying = inputKeepPlaying == "S" || inputKeepPlaying == "s"? true : false;
             break;
         } 
 
         // Le queda al menos un intento. Le pido que ingrese nuevamente un número.
-        remainingAttempts = 3 - attemps;
+        remainingAttempts = 2 - attemps;
         inputNumber = prompt("No acertaste! Te quedan " + remainingAttempts + " intentos. Ingresá un número del 0 al 9.");
         numberOk = inputNumber >= 0 && inputNumber <= 9? true : false;
 
